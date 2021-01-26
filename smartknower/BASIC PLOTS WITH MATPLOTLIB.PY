@@ -12,12 +12,6 @@ def abc():
 abc()
 
 
-#               histogram
-#beans :-equally space regions
-run=[1,24,34,45,56,78,89,103,150]
-plt.hist(runs,bins=3)
-plt.show()
-plt.hist(runs,bins=[1,30,80,100,120,135,150])
-plt.show()
+
 
 

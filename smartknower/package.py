@@ -1,3 +1,4 @@
+#for installion of packages (PS D:\python> "python -m pip install matplotlib")
 from math import*
 print(radians(12))
 #import math as mt ( for rname the method)
