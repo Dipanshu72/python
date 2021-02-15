@@ -6,7 +6,7 @@ y=df["target"]
 x=df.drop("target",axis=1)
 print(x.head())
 
-X=x.drop("sex",axis=1)
+X=x.drop(["age","sex"],axis=1)
 print(X.head())
 print(X.isna().sum())
 print(X.dtypes)

@@ -4,6 +4,8 @@
    #3.sum all the squared distance
    #4.divide by total no. of point
    #var= sum of square distance/number of points
+# r^2=var(mean)-var(fit)/var(mean)
+
 import pandas as pd
 df=pd.read_csv("D:\python\python\smartknower\gapminder.csv")
 print(df.head())

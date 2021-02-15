@@ -37,7 +37,7 @@ print(c.shape)
 
 #2
 from sklearn.model_selection import train_test_split
-c_train,c_test,y_train,y_test=train_test_split(c,y,random_state=42,stratify=y)
+c_train,c_test,y_train,y_test=train_test_split(c,y,test_size=0.1,random_state=42,stratify=y)
 print(c.head())
 
 from sklearn.preprocessing import MinMaxScaler
@@ -61,7 +61,7 @@ print(data)
 f=data.drop(["first","Third","eigth","tenth","eleventh"],axis=1)
 print(f)
 q=pd.get_dummies(f,columns=["fourth"])
-q.loc[0,"fourth_female"]=0
+q.loc[0,"fourth_female"]=1
 print(q)
 q=scaler.transform(q)
 print(model.predict(q))
